@@ -41,7 +41,7 @@ def main():
 
     clock = pygame.time.Clock()
 
-    sound = pygame.mixer.Sound("button-6.wav")
+    sound = pygame.mixer.Sound("click.wav")
 
     font = pygame.font.Font(None, 32)
 
