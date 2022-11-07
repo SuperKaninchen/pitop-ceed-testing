@@ -11,7 +11,7 @@ class Ball(object):
         self.surface = pygame.Surface((self.rect.width, self.rect.height))
 
     def move(self, delta):
-        self.rect = self.rect.move(self.velocity[0]/delta, self.velocity[1]/delta)
+        self.rect = self.rect.move(int(self.velocity[0]/delta), int(self.velocity[1]/delta))
 
 
 def update(ball, delta, sound):
@@ -41,7 +41,7 @@ def main():
 
     clock = pygame.time.Clock()
 
-    sound = pygame.mixer.Sound("click.mp3")
+    sound = pygame.mixer.Sound("button-6.wav")
 
     font = pygame.font.Font(None, 32)
 
